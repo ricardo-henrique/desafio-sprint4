@@ -5,14 +5,11 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* header styles */
 header {
   margin-bottom: 1.5rem;
   /* border-bottom: 1px solid #000; */
   box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
-}
-
-main {
-  text-align: center;
 }
 
 .navigation {
@@ -20,7 +17,7 @@ main {
   align-items: center;
 }
 .navigation img {
-  width: 12.5em;
+  width: 9.375rem;
   margin: 0.9375rem;
 }
 
@@ -28,7 +25,7 @@ main {
   display: flex;
   flex: 1; /* flex-basis: 100%; */
   justify-content: center;
-  gap: 0.625em;
+  gap: 3em;
 }
 
 .nav__items {
@@ -41,6 +38,33 @@ main {
   font-size: 1.5rem;
   font-weight: 500;
 }
+
+/* main section styles */
+main {
+  text-align: center;
+  height: 100vh;
+  margin: 0.625rem 0;
+}
+
+.car__description {
+  /* margin: 0.5em; */
+  font-weight: 500;
+}
+
+.car__description__link {
+  color: #1b357e;
+}
+
+/* main-lançamento section */
+.main__video {
+  width: 100%;
+  height: 70%;
+}
+
+/* footer section styles */
+/* footer {
+  height: 100vh;
+} */
 
 .footer {
   width: 100%;
