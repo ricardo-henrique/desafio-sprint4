@@ -4,17 +4,17 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
+/* 
 html,
 body {
   height: 100%;
   display: flex;
   flex-direction: column;
-}
+} */
 
 /* header styles */
 header {
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
   /* border-bottom: 1px solid #000; */
   box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
 }
@@ -48,7 +48,7 @@ header {
 
 /* main section styles */
 main {
-  flex: 1;
+  /* flex: 1; */
   text-align: center;
   /* height: 100vh; */
   margin: 0.625rem 0;
@@ -66,34 +66,91 @@ main {
 /* main-lançamento section */
 .main__video {
   width: 100%;
-  height: 70%;
+  height: 37.5rem;
+}
+
+.launch__main__car__table {
+  display: flex;
+  justify-content: center;
+  gap: 6.25rem;
+}
+
+.launch__cars {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .launch__cars:hover {
+  width: 400px;
+} */
+
+.launch__car__info {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.launch__car__info img {
+  height: 24px;
+}
+
+.launch__car__description {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.launch__car__description input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+}
+
+.launch__car__description__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.launch__car__name {
+  color: #1351d8;
+}
+
+.launch__compare__section {
+  margin: 3.125rem 0;
+}
+.launch__compare__button {
+  width: 400px;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1351d8;
+  color: #fff;
+  font-size: 1.25rem;
+  cursor: pointer;
 }
 
 /* footer section styles */
 
-/* footer {
-  height: 100vh;
-} */
-
-.footer {
+footer {
   width: 100%;
   background: #1b357e;
   padding: 1.125rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* position: fixed;
+  bottom: 0; */
 }
 
-.footer h2 {
+footer h2 {
   color: #fff;
   font-weight: 500;
 }
 
-.footer p {
+footer p {
   color: #fff;
 }
 
-.footer > .social__media {
+.social__media {
   display: flex;
   align-items: center;
   gap: 0.625rem;
