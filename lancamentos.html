@@ -7,11 +7,11 @@
     <title>Lançamentos</title>
   </head>
   <body>
-    <header class="header">
-      <nav class="navigation">
-        <img src="./img/logo-ford-256.png" alt="ford logo" />
-        <ul class="nav__menu">
-          <li class="nav__items">
+    <header>
+      <img src="./img/logo-ford-256.png" alt="ford logo" />
+      <nav class="navigation-menu">
+        <ul class="navigation-list">
+          <li>
             <a href="./index.html" class="links">Home</a>
           </li>
           <li class="nav__items">
@@ -24,66 +24,70 @@
       </nav>
     </header>
 
-    <main class="main__release">
-      <iframe class="main__video" src="https://www.youtube.com/embed/vQsryuNmsL0?autoplay=1&mute=1&controls=0">
-      </iframe>
-      <div class="launch__main__car__table">
-        <div class="launch__cars">
-          <img src="./img/XL Cabine.jpg" alt="" />
-          <div class="launch__car__info">
-            <div class="launch__car__description">
-              <input type="checkbox" name="" id="" />
-              <div class="launch__car__description__text">
-                <p class="launch__car__name">XL Cabine</p>
-                <p>aaaaa</p>
-              </div>
-            </div>
-            <img src="./img/info.png" alt="" />
-          </div>
-        </div>
-        <div class="launch__cars">
-          <img src="./img/xls 2.2 diesel.jpg" alt="" />
-          <div class="launch__car__info">
-            <div class="launch__car__description">
-              <input type="checkbox" name="" id="" />
-              <div class="launch__car__description__text">
-                <p class="launch__car__name">XLS 2.2 DISEL</p>
-                <p>aaaaa</p>
-              </div>
-            </div>
-            <img src="./img/info.png" alt="" />
-          </div>
-        </div>
-        <div class="launch__cars">
-          <img src="./img/storm.jpg" alt="" />
-          <div class="launch__car__info">
-            <div class="launch__car__description">
-              <input type="checkbox" name="" id="" />
-              <div class="launch__car__description__text">
-                <p class="launch__car__name">Storm</p>
-                <p>aaaaa</p>
-              </div>
-            </div>
-            <img src="./img/info.png" alt="" />
-          </div>
-        </div>
-      </div>
+    <main class="main-content">
+      <iframe src="https://www.youtube.com/embed/vQsryuNmsL0?autoplay=1&mute=1&controls=0" frameborder="0"></iframe>
+      <table>
+        <tr>
+          <td colspan="3">
+            <img src="img/XL Cabine.jpg" alt="Imagem 1" width="100%" />
+          </td>
+          <td colspan="3">
+            <img src="img/xls 2.2 diesel.jpg" alt="Imagem 2" width="100%" />
+          </td>
+          <td colspan="3">
+            <img src="img/storm.jpg" alt="" />
+          </td>
+        </tr>
 
-      <section class="launch__compare__section">
-        <button class="launch__compare__button">Comparar Carros</button>
-      </section>
+        <tr>
+          <td>
+            <input type="checkbox" />
+          </td>
+          <td>
+            <strong>XL Cabine Simples 2.2 Diesel</strong><br />
+            Descrição resumida<br />
+            R$ 150.000
+          </td>
+          <td>
+            <img src="img/info.png" alt="Detalhe 1" width="50" />
+          </td>
+          <!-- Coluna 2 -->
+          <td>
+            <input type="checkbox" />
+          </td>
+          <td>
+            <strong>XLS 2.2 Diesel 4X4 XT 2022</strong><br />
+            Descrição resumida<br />
+            R$ 135.000
+          </td>
+          <td>
+            <img src="img/info.png" alt="Detalhe 2" width="50" />
+          </td>
+
+          <td>
+            <input type="checkbox" />
+          </td>
+          <td>
+            <strong>Storm 2.2 Diesel 4X4 XT 2022</strong><br />
+            Descrição resumida<br />
+            R$ 120.000
+          </td>
+          <td>
+            <img src="img/info.png" alt="Detalhe 3" width="50" />
+          </td>
+        </tr>
+      </table>
     </main>
 
-    <footer class="footer">
-      <div class="social__media">
-        <!-- <h2>Redes Sociais</h2> -->
-        <a href="" class="social_media_link">
+    <footer>
+      <div class="footer__social__media">
+        <a href="">
           <img src="./img/facebook-50.png" alt="" />
         </a>
-        <a href="" class="social_media_link">
+        <a href="">
           <img src="./img/youtube-squared-50.png" alt="" />
         </a>
-        <a href="" class="social_media_link">
+        <a href="">
           <img src="./img/instagram-logo-50.png" alt="" />
         </a>
       </div>
