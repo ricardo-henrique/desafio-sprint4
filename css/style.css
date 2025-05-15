@@ -145,6 +145,7 @@ input[type="checkbox"] {
 }
 .contact-form h2 {
   color: var(--secondary-color);
+  text-align: center;
 }
 .form-fields button {
   width: 100%;
@@ -235,6 +236,7 @@ footer p {
 
   .car-table {
     flex-direction: column;
+    justify-content: center;
   }
 
   #main-content-contact {
