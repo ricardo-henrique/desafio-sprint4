@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+:root {
+  --primary-color: #1b357e;
+  --secondary-color: #1351b8;
+  --highlighted: #f2f2f2;
+  --white: #fff;
+}
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header img {
+  width: 100px;
+  width: auto;
+  margin: 0.5rem;
+}
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.navigation-menu {
+  margin: 0 auto;
+}
+.navigation-list {
+  list-style-type: none;
+  display: flex;
+  gap: 0.625rem;
+}
+.highlighted {
+  width: 150px;
+  padding: 0.625rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 0.25rem;
+  background-color: var(--highlighted);
+  text-align: center;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main-content img {
+  max-width: 80%;
+  margin: 0 auto;
+  border-radius: 0.25rem;
+}
+.main-content p {
+  text-align: center;
+  margin: 0.625rem 0;
+}
+
+.car__description__link {
+  font-size: 1rem;
+  text-decoration: underline;
+}
+iframe {
+  width: 100%;
+  height: 37.5rem;
+  border-radius: 0.25rem;
+}
+.video-description {
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 1rem 0;
+}
+input[type="checkbox"] {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.car-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.125rem 0;
+}
+.cars {
+  margin-right: 1rem;
+}
+.car-title {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.car-price {
+  font-weight: 500;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+.button-compare {
+  margin: 1.125rem 0;
+  width: 25rem;
+  padding: 1rem;
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border-radius: 0.25rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.button-compare button {
+  width: 31.25rem;
+  padding: 1rem;
+  background-color: var(--seconday-color);
+  color: var(--white);
+  border: none;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
+}
+.button-compare button:hover {
+  background-color: var(--primary-color);
+}
+#main-content-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2.40625rem 0;
+}
+.contact-car img {
+  width: 31.25rem;
+  height: auto;
+}
+.contact-form {
+  width: 500px;
+  height: auto;
+  padding: 1rem;
+}
+.contact-form h2 {
+  color: var(--secondary-color);
+}
+.form-fields button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+.form-fields button:hover {
+  width: 31.25rem;
+  transition: 0.2s ease-in-out 0.2s;
+  background-color: var(--seconday-color);
+  /* color: #fff; */
+}
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input[type="text"],
+select,
+textarea {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #000;
+  width: 100%;
+}
+textarea {
+  resize: none;
+  height: 9.375rem;
+  text-align: justify;
+}
+footer {
+  width: 100%;
+  background: var(--primary-color);
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer p {
+  color: var(--white);
+}
+.footer-social-media {
+  display: flex;
+  align-items: center;
+}
+.footer-social-media img {
+  width: 40px;
+  height: auto;
+}
+@media (max-width: 540px) {
+  header {
+    flex-direction: column;
+  }
+  header img {
+    width: 150px;
+    height: auto;
+  }
+  .navigation-list {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .navigation-list li {
+    margin: 0.25rem 0;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  footer p {
+    display: none;
+  }
+
+  iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 0;
+    margin: 1rem 0;
+  }
+
+  .car-table {
+    flex-direction: column;
+  }
+
+  #main-content-contact {
+    flex-direction: column;
+  }
+  .contact-car img {
+    width: 100%;
+    height: auto;
+    padding: 0.75rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin: 0.75rem;
+  }
+  .form-fields button:hover {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  #main-content-contact {
+    flex-direction: column;
+  }
+
+  .car-table {
+    flex-direction: column;
+  }
+
+  .contact-car img {
+    width: 28.125rem;
+    height: auto;
+  }
+}
